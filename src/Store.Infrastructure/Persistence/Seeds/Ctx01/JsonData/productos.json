@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "Name": "Producto 1",
+    "Description": "Descripcion producto 1",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Producto 2",
+    "Description": "Descripcion producto 2",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 2
+  },
+  {
+    "Id": 3,
+    "Name": "Producto 3",
+    "Description": "Descripcion producto 3",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 3
+  },
+  {
+    "Id": 4,
+    "Name": "Producto 4",
+    "Description": "Descripcion producto 4",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 4
+  },
+  {
+    "Id": 5,
+    "Name": "Producto 5",
+    "Description": "Descripcion producto 5",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 5
+  },
+  {
+    "Id": 6,
+    "Name": "Producto 6",
+    "Description": "Descripcion producto 6",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 6
+  },
+  {
+    "Id": 7,
+    "Name": "Producto 7",
+    "Description": "Descripcion producto 7",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 7
+  },
+  {
+    "Id": 8,
+    "Name": "Producto 8",
+    "Description": "Descripcion producto 8",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 8
+  },
+  {
+    "Id": 9,
+    "Name": "Producto 9",
+    "Description": "Descripcion producto 9",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 9
+  },
+  {
+    "Id": 10,
+    "Name": "Producto 10",
+    "Description": "Descripcion producto 10",
+    "Stock": 5,
+    "Price": 10,
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02",
+    "CategoryId": 10
+  }
+]

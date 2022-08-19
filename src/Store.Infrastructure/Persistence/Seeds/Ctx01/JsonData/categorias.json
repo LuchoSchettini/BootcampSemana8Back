@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "Name": "Categoria 1",
+    "Description": "Descripcion categoria 1",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 2,
+    "Name": "Categoria 2",
+    "Description": "Descripcion categoria 2",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 3,
+    "Name": "Categoria 3",
+    "Description": "Descripcion categoria 3",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 4,
+    "Name": "Categoria 4",
+    "Description": "Descripcion categoria 4",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 5,
+    "Name": "Categoria 5",
+    "Description": "Descripcion categoria 5",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 6,
+    "Name": "Categoria 6",
+    "Description": "Descripcion categoria 6",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 7,
+    "Name": "Categoria 7",
+    "Description": "Descripcion categoria 7",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 8,
+    "Name": "Categoria 8",
+    "Description": "Descripcion categoria 8",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 9,
+    "Name": "Categoria 9",
+    "Description": "Descripcion categoria 9",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  },
+  {
+    "Id": 10,
+    "Name": "Categoria 10",
+    "Description": "Descripcion categoria 10",
+    "CreatedAt": "2022-07-01",
+    "UpdatedAt": "2022-07-02"
+  }
+]

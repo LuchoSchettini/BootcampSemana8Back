@@ -45,9 +45,13 @@ public class ProductsController : ControllerBase
     /// Get all products
     /// </summary>
     /// <response code="200">Returns the products</response>
+    /// <response code="400">If the data doesn't pass the validations</response>
     [HttpGet]
     //[MapToApiVersion("1.1")] //si este metodo pertenece a la vesion 1.1 hay que ponerle este atributo (en caso de ser la verion prederminada no hace falta ponerle nada)
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<ProductResponse>))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public ActionResult<IReadOnlyList<ProductResponse>> GetAll()
     {
         try
@@ -73,10 +77,13 @@ public class ProductsController : ControllerBase
     /// </summary>
     /// <param name="id">Product id</param>
     /// <response code="200">Returns the existing product</response>
+    /// <response code="400">If the data doesn't pass the validations</response>
     /// <response code="404">If the product doesn't exist</response>
     [HttpGet("{id:int}")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ProductResponse))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public ActionResult GetById(int id)
     {
         try
@@ -107,6 +114,7 @@ public class ProductsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(ProductResponse))]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public ActionResult Create(CreateProductRequest request)
     {
         try
@@ -170,10 +178,14 @@ public class ProductsController : ControllerBase
     /// </summary>
     /// <param name="id">Product id</param>
     /// <response code="204">If the product was deleted</response>
+    /// <response code="400">If the data doesn't pass the validations</response>
     /// <response code="404">If the product doesn't exist</response>
     [HttpDelete("{id:int}")]
-    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    //[ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public ActionResult DeleteById(int id)
     {
         try
@@ -225,6 +237,8 @@ public class ProductsController : ControllerBase
     [HttpGet("GetAllFilters")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public async Task<ActionResult<PagerResponse<ProductResponse>>> GetAllFilters([FromQuery] PagerRequest pagerRequest)
     {
         try

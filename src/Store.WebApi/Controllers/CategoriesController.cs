@@ -44,6 +44,9 @@ namespace Store.WebApi.Controllers
         /// <response code="200">Returns the categories</response>
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<CategoryResponse>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
         //public ActionResult<IReadOnlyList<CategoryResponse>> GetAll()
         public ActionResult GetAll()
         {
@@ -75,7 +78,9 @@ namespace Store.WebApi.Controllers
         /// <response code="404">If the category doesn't exist</response>
         [HttpGet("{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CategoryResponse))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
         public ActionResult GetById(int id)
         {
             try
@@ -105,6 +110,7 @@ namespace Store.WebApi.Controllers
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CategoryResponse))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
         public ActionResult Create(CreateCategoryRequest request)
         {
             try
@@ -184,8 +190,11 @@ namespace Store.WebApi.Controllers
         /// <response code="204">If the category was deleted</response>
         /// <response code="404">If the category doesn't exist</response>
         [HttpDelete("{id:int}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        //[ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
         public ActionResult DeleteById(int id)
         {
             try
@@ -221,6 +230,8 @@ namespace Store.WebApi.Controllers
         [HttpGet("GetAllFilters")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
         public async Task<ActionResult<PagerResponse<CategoryResponse>>> GetAllFilters([FromQuery] PagerRequest pagerRequest)
         {
             try
